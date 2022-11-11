@@ -53,7 +53,7 @@ params:
     - name: twitter
       url: "https://twitter.com/w0nderfall"
     - name: mastodon
-      url: "https://mastoid.dev"
+      url: "https://mastoid.dev/@wonderfall"
     - name: matrix
       url: "https://matrix.to/#/@wonderfall:lysergide.dev"
     - name: github
