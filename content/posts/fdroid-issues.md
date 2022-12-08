@@ -1,7 +1,7 @@
 ---
 title: "A brief and informal analysis of F-Droid security"
 date: 2022-01-02T21:28:31Z
-draft: false
+draft: true
 tags: ['security', 'android']
 ---
 
