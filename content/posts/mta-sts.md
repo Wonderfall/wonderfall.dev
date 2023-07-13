@@ -81,7 +81,7 @@ Then, head to your Netlify account, add a new site, register your GitHub reposit
 
 - An *optional* `TXT` record for TLS-RPT so that the sending mail server will receive reports about successful and failed attempts at applying the MTA-STS policy. Since these reports can be very useful, I highly recommend you configure TLS-RPT. To do that, add the following TXT record to the `_smtp._tls` subdomain: `"v=TLSRPTv1; rua=mailto:reports@domain.tld"` where `rua=` should point to the mail address where you want to receive reports.
 
-> **Security tip :** since `mta-sts` is a subdomain with an A record, I strongly recommend defining a "reject all" policy and a null MX record ([RFC 7505](https://www.rfc-editor.org/rfc/rfc7505)) for that subdomain. That is because even when an MX record does not exist, [A records can be used as a fallback](https://www.rfc-editor.org/rfc/rfc5321#section-5).
+> **Security tip :** since `mta-sts` is a subdomain with an A record, I strongly recommend defining a "reject all" SPF policy and a null MX record ([RFC 7505](https://www.rfc-editor.org/rfc/rfc7505)) for that subdomain. That is because even when an MX record does not exist, [A records can be used as a fallback](https://www.rfc-editor.org/rfc/rfc5321#section-5).
 
 Wait a bit for the DNS propagation to take place, then verify with [Hardenize](https://www.hardenize.com/) that MTA-STS is enabled.
 
