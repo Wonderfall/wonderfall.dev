@@ -75,7 +75,7 @@ max_age: 604800
 
 Then, head to your Netlify account, add a new site, register your GitHub repository and voilà. Once it's done and that you can access your policy through your `netlify.app` address, it's a matter of publishing a few DNS records:
 
-- An `A` record for your Netlify-hosted policy. If your domain name from which you intend to send and receive mails is `@domain.tld` then you should make this `A` record for `mta-sts.domain.tld`. Netlify will tell you to use a CNAME record but I personnally caution against using CNAME to third parties in general. They have a universal load balancer IPv4 [you can use](https://docs.netlify.com/domains-https/custom-domains/configure-external-dns/), so you should use that.
+- An `A` record for your Netlify-hosted policy. If your domain name from which you intend to send and receive mails is `@domain.tld` then you should make this `A` record for `mta-sts.domain.tld`. Netlify will tell you to use a CNAME record but I personally caution against using CNAME to third parties in general. They have a universal load balancer IPv4 [you can use](https://docs.netlify.com/domains-https/custom-domains/configure-external-dns/), so you should use that.
 
 - A `TXT` record for MTA-STS discovery. The content should resemble to the following: `"v=STSv1; id=2023071200"`. `v=STSv1` declares the policy version, and `id=` is really just a random number you should increment to signal whenever your MTA-STS policy has been changed. If you're out of ideas you can use the Unix epoch time, or the YMD format followed by two numbers reserved for iterations (just like I do).
 
