@@ -17,6 +17,12 @@ However, I keep asking myself the following question:
 
 You can say LLMs are fundamentally dumb because of their inherent linearity. Are they? Isn't language by itself linear? Autoregressive models may as well be a simple yet effective approach after all, since they can be remarkably effective at modeling human language use. But there are many limitations in practice.
 
+## Clarification on terminology
+
+In the field of statistics, an autoregressive model means that future outputs (or predictions) depend directly on all previous inputs (or tokens). Transformers also follow this principle, but unlike other traditional linear autoregressive models, they condition outputs on previous tokens using highly non-linear mechanisms (self-attention).
+
+Ultimatley, transformers remain next-token predictors; so when I mention "linearity", I'm specifically referring to the sequential nature of next-token generation itself, rather than implying transformers lack non-linear capabilities altogether.
+
 ## Limitations of AR models
 
 By design, AR models lack planning and reasoning capabilities. If you generate one word at a time, you don't really have a general idea of where you're heading. You just hope that you will reach a nice conclusion by following a chain of thoughts. Large reasoning models work the same. They were trained using RL on many formal proofs, not too easy but not too hard. AR models being stochastic, they won't always yield good results when formal logic is involved. They don't really master abstract principles the way humans do.
