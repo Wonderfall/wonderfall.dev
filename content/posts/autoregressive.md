@@ -21,7 +21,7 @@ You can say LLMs are fundamentally dumb because of their inherent linearity. Are
 
 In the field of statistics, an autoregressive model means that future outputs (or predictions) depend directly on all previous inputs (or tokens). Transformers also follow this principle, but unlike other traditional linear autoregressive models, they condition outputs on previous tokens using highly non-linear mechanisms (self-attention).
 
-Ultimatley, transformers remain next-token predictors; so when I mention "linearity", I'm specifically referring to the sequential nature of next-token generation itself, rather than implying transformers lack non-linear capabilities altogether.
+Ultimately, transformers remain next-token predictors; so when I mention "linearity", I'm specifically referring to the sequential nature of next-token generation itself, rather than implying transformers lack non-linear capabilities altogether.
 
 ## Limitations of AR models
 
