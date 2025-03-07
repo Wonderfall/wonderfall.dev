@@ -11,7 +11,7 @@ Most generative AI models nowadays are autoregressive. That means they're follow
 
 ## The purpose of AI research
 
-But what is the original purpose of AI research? I will speak for myself here, but I know many other AI researchers will say the same: the ultimate goal is to understand how humans think. And we think the best (or the funniest) way to understand how humans think is to try to recreate it. I come from a medical science background, where I studied the brain from a "traditional" neuroscience perspective (biology, pathology, anatomy, psychology and whatnot). That the best way is actually to try to recreate it is honestly how I feel whenever I read about AI advancements where the clear goal is to achieve/surpass human intelligence, something we don't fully understand yet.
+But what is the original purpose of AI research? I will speak for myself here, but I know many other AI researchers will say the same: the ultimate goal is to understand how humans think. I think one of the best (or the funniest) ways to understand how humans think is to try to recreate it. I come from a medical science background, where I studied the brain from a "traditional" neuroscience perspective (biology, pathology, anatomy, psychology and whatnot). That a good way to understand human-level intelligence is actually to try to recreate it is honestly how I feel whenever I read about AI advancements where the clear goal is to achieve/surpass human intelligence, something we don't fully understand yet.
 
 > “What I cannot create, I do not understand.” - Richard Feynman
 
